@@ -15,8 +15,7 @@ while True:
     
     if user_input not in options:
         continue
-    
-    #in the video he typed "continue" for the programm to input"Type Rock/..." again
+
     random_number = random.randint(0, 2)
     #generate a random number from 0 to 2
     #rock = 0, paper = 1, scissors = 2
@@ -27,17 +26,14 @@ while True:
     if user_input == "rock" and computer_pick == "scissors":
         print("you won. you'll see next time")
         user_wins += 1
-        continue
 
     elif user_input == "paper" and computer_pick == "rock":
         print("you won. you'll see next time")
         user_wins += 1
-        continue
 
     elif user_input == "scissors" and computer_pick == "paper":
         print("you won. you'll see next time")
         user_wins += 1
-        continue
 
     else: 
         print("you lost! ha!")
